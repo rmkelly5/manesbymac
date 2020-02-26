@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       {/* include navigation component  */}
       <NavHeader />
       
-      
+      {/* include sample content block components  */}
       <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} />
       
       <ContentBlock  />

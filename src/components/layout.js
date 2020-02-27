@@ -8,6 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import NavHeader from "../components/navbar"
+import ContentBlock from "./contentblock"
 
 import Header from "./header"
 import "./layout.css"
@@ -25,8 +27,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      {/* include navigation component  */}
+      <NavHeader />
+      
+      {/* include sample content block components  */}
+      <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} />
+      
+      <ContentBlock  />
+      
+      <ContentBlock blockHeight={600} backgroundColorVal={'green'} />
+
+
+
+      {/* @@TODO - should be removed - do we want small 1 line footer? */}
+      {/* <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -39,7 +53,8 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+      </div> */}
+
     </>
   )
 }

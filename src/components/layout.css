@@ -508,9 +508,9 @@ dt {
 th {
   font-weight: bold;
 }
-li {
+/* li {
   margin-bottom: calc(1.45rem / 2);
-}
+} */
 ol li {
   padding-left: 0;
 }
@@ -622,6 +622,35 @@ pre tt:after {
 }
 
 .navpos{
-  margin-left: auto;
+  margin: auto;
 }
+
+.nav-li-item{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 23px;
+}
+.nav-div{
+  background-color: #000;
+}
+
+.navbar a{
+  color: white !important;
+}
+
+.navbar a:hover{
+  color: pink !important;
+}
+
+.navbar{
+  padding: initial !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  top: 0;
+  transition: top 0.3s;
+  position: fixed !important;
+  width: 100%;
+}
+
+
 

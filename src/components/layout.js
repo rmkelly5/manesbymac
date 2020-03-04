@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <NavHeader />
       
       {/* include sample content block components  */}
-      <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} />
+      <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} blockMarginTop={70} />
       
       <ContentBlock  />
       

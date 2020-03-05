@@ -621,6 +621,10 @@ pre tt:after {
   }
 }
 
+
+/* Styles added by us */
+/* @@TODO : remove !important's */
+
 .navpos{
   margin: auto;
 }

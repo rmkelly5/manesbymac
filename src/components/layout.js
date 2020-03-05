@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import NavHeader from "../components/navbar"
 import ContentBlock from "./contentblock"
+import ContactUs from "./contactus"
+import Image from "../components/image"
 
 import Header from "./header"
 import "./layout.css"
@@ -35,7 +37,9 @@ const Layout = ({ children }) => {
       
       <ContentBlock  />
       
-      <ContentBlock blockHeight={600} backgroundColorVal={'green'} />
+      <ContactUs blockHeight={1000} backgroundColorVal={'lightgreen'} />
+
+      
 
 
 

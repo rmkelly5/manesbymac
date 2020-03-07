@@ -654,7 +654,7 @@ pre tt:after {
   transition: top 0.3s;
   position: fixed !important;
   width: 100%;
+  z-index: 10;
 }
-
 
 

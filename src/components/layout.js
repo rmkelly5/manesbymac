@@ -16,6 +16,7 @@ import Image from "../components/image"
 import Header from "./header"
 import "./layout.css"
 import ServicesSection from "./servicesSection";
+import GallerySection from "./gallerySection";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,6 +43,8 @@ const Layout = ({ children }) => {
       <ServicesSection blockHeight={1000} />
       
       <ContactUs blockHeight={1000} backgroundColorVal={'lightgreen'} />
+
+      <GallerySection blockHeight={1000} />
 
       
 

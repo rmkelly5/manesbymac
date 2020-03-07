@@ -66,7 +66,7 @@ window.onscroll = function() {
               <a className="nav-link" href="#servicesSection">Services</a>
             </li>
             <li className="nav-item dropdown nav-li-item">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a className="nav-link " href="#gallerySection" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
                 Gallery
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">

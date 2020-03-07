@@ -7,7 +7,10 @@ import "./layout.css"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
+  require("smooth-scroll")('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+  });
 }
 
 const NavHeader = () => {

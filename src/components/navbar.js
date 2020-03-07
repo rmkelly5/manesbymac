@@ -40,6 +40,10 @@ window.onscroll = function() {
       {/* including bootstrap css  */}
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
       
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-IaoIh43rhygYYBAfbhHJuuzbZWKkhII&callback=initMap" async defer />
+      
+
     </Helmet>
     <nav id="navbar" className="navbar navbar-expand-md navbar-dark nav-div">
         <a className="navbar-brand logo-icon nav-anchor" href="#">MM</a>

@@ -5,6 +5,20 @@ import Helmet from "react-helmet"
 import Image from "../components/image"
 // import { url } from "inspector";
 
+
+if (typeof window !== 'undefined') {
+  window.initMap = function() {
+    var map = new window.google.maps.Map(document.getElementById('map'), {
+      center: { lat: 40.193240, lng: -74.165349 },
+      zoom: 10,
+    })
+    var marker = new window.google.maps.Marker({
+      position:  { lat: 40.193240, lng: -74.165349 }
+    })
+    marker.setMap(map);
+  }
+}
+
 const ContactUs = ({ blockHeight , backgroundColorVal , blockMarginTop}) => {
   return (
     <div 
@@ -36,7 +50,7 @@ const ContactUs = ({ blockHeight , backgroundColorVal , blockMarginTop}) => {
             </div>
 
 
-            <div className="col-lg-6">
+            <div id="map" className="col-lg-6" style={{ width: "100%" , height :"400px", backgroundColor : "grey"}}>
             Google Map
 
             </div>

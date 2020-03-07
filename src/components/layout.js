@@ -15,6 +15,7 @@ import Image from "../components/image"
 
 import Header from "./header"
 import "./layout.css"
+import ServicesSection from "./servicesSection";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
       {/* include sample content block components  */}
       <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} blockMarginTop={70} />
       
-      <ContentBlock  />
+      <ServicesSection blockHeight={1000} />
       
       <ContactUs blockHeight={1000} backgroundColorVal={'lightgreen'} />
 

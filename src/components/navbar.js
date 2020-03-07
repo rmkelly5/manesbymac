@@ -59,7 +59,7 @@ window.onscroll = function() {
               <a className="nav-link nav-anchor" href="#">About<span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item nav-li-item">
-              <a className="nav-link" href="profile.html">Services</a>
+              <a className="nav-link" href="#servicesSection">Services</a>
             </li>
             <li className="nav-item dropdown nav-li-item">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,7 +73,7 @@ window.onscroll = function() {
               </div>
             </li>
             <li className="nav-item nav-li-item">
-            <a className="nav-link" href="profile.html">Contact</a>
+            <a className="nav-link" href="#contactSection">Contact</a>
             </li>
             <li className="nav-item nav-li-item">
             <a className="nav-link" href="http://instagram.com/manesbymaceymorgan">

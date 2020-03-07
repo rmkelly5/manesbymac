@@ -11,6 +11,7 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
   return (
     <div 
       style={{ height : blockHeight , backgroundColor: backgroundColorVal , marginTop: blockMarginTop }} 
+      id="servicesSection"
     >
       <div className="row" style={{ padding: '25px'  }}>
        

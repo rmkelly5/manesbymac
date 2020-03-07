@@ -23,6 +23,7 @@ const ContactUs = ({ blockHeight , backgroundColorVal , blockMarginTop}) => {
   return (
     <div 
       style={{ height : blockHeight , backgroundColor: backgroundColorVal , marginTop: blockMarginTop }} 
+      id="contactSection"
     >
       <h1 style={{ textAlign: "center", padding: "25px"}}>Contact Us</h1>
       <div className="row" style={{ paddingLeft: '100px', paddingRight: '100px', paddingBottom: '100px', paddingTop: '20px'  }}>

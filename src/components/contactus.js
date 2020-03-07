@@ -33,20 +33,18 @@ const ContactUs = ({ blockHeight , backgroundColorVal , blockMarginTop}) => {
           
             <div className="col-lg-6">
 
-              <p className="" style={{ whiteSpace : 'pre-wrap' }} id="yui_3_17_2_1_1583186918645_1706">      
-                <strong>T |&nbsp;732-938-3011</strong>
+              <p className="" style={{ whiteSpace : 'pre-wrap' }}>      
+                <b>T |&nbsp;732-938-3011</b>
                 <br /><br />
-                <strong>SALON HOURS</strong>
+                <b>SALON HOURS</b>
                 <br />Monday: Closed<br />Tuesday:&nbsp; 10am-7pm<br />Wednesday: 10am-7pm<br />Thursday: &nbsp;10am-8pm<br />Friday: &nbsp;10am-7pm<br />Saturday: 9am-5pm<br />Sunday: Closed      
               </p>
 
-              <p className="" style={{ whiteSpace : 'pre-wrap' }}><strong>Location</strong>: <strong>Cathy and Danielle's Hair Salon</strong></p>
+              <p className="" style={{ whiteSpace : 'pre-wrap' }}><b>Location : Cathy and  Danielle's Hair Salon</b> </p>
 
               <p className="" style={{ whiteSpace : 'pre-wrap' }}>93 Main Street </p>
 
               <p className="" style={{ whiteSpace : 'pre-wrap' }}>Farmingdale, NJ 07727</p>
-
-              <p className="" style={{ whiteSpace : 'pre-wrap' }}>*48 Hour cancellation policy by telephone enforced</p>
 
             </div>
 

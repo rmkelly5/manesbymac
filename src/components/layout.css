@@ -657,4 +657,25 @@ pre tt:after {
   z-index: 10;
 }
 
+/* font styling */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+body h1 {
+  font-family:  'Pacifico', cursive;
+}
+
+body li {
+  font-family: 'Quicksand', sans-serif;
+}
 

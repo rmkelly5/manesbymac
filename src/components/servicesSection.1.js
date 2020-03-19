@@ -92,7 +92,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
 
 
   /* ----------------
-    // define onclick event for category <a> elements
+    // hide / show correct content based on selected category
 
     @param event - The DOM element object that the user selected
   ---------------- */

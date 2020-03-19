@@ -109,7 +109,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
         $(view).collapse();
         $(view).removeClass('show');       
       } 
-      // else if it is the new <ul> blockm , show it
+      // else if it is the new <ul> block , show it
       else if (view.id === event.target.id) {
         event.preventDefault();
         $(view).collapse();

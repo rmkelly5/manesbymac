@@ -16,6 +16,7 @@ import Image from "../components/image"
 import Header from "./header"
 import "./layout.css"
 import ServicesSection from "./servicesSection";
+import ServicesSection1 from "./servicesSection.1";
 import GallerySection from "./gallerySection";
 
 const Layout = ({ children }) => {
@@ -40,11 +41,13 @@ const Layout = ({ children }) => {
       {/* include sample content block components  */}
       <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} />
       
-      <ServicesSection blockHeight={1000} />
-      
-      <ContactUs blockHeight={1000} backgroundColorVal={'lightgreen'} />
+      {/* <ServicesSection blockHeight={'auto'} /> */}
 
-      <GallerySection blockHeight={1000} />
+      <ServicesSection1 blockHeight={'auto'} />
+      
+      <ContactUs blockHeight={1000} backgroundColorVal={'#D1D7E0'} />
+
+      <GallerySection blockHeight={1000} backgroundColorVal={'white'}/>
 
       
 

@@ -16,6 +16,7 @@ if (typeof window !== "undefined") {
 const NavHeader = () => {
 
   // javascript for navbar hide on scroll
+if (typeof window !== `undefined`) {
 
   var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -26,6 +27,7 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-70px";
   }
   prevScrollpos = currentScrollPos;
+}
 }
 
   return (

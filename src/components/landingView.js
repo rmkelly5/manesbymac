@@ -3,12 +3,16 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 import testvid from "../images/Under_the_Sea.webm"
+import $ from 'jquery';
 
 const LandingView = ({ }) => {
   
   // include jquery
-  const $ = require("jquery");
+  //const $ = require("jquery");
+  //typeof $ !== `undefined` ? require("jquery") : null
+  //const $ = typeof window !== `undefined` ? require("jquery") : null
 
+  if (typeof window !== `undefined`) {
   $( document ).ready(function() { 
     var vid = document.getElementById("vid");
     vid.addEventListener("timeupdate", function () {
@@ -17,6 +21,7 @@ const LandingView = ({ }) => {
         }
     });
   });
+}
   
   
   return (

@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-// adding webpack config for jQuery 
+// //adding webpack config for jQuery 
 // exports.onCreateWebpackConfig = ({
 //   actions,
 // }) => {
@@ -17,3 +17,24 @@
 //     }
 //   })
 // }
+
+// new webpack.ProvidePlugin({
+//   $: 'jquery',
+//   jQuery: 'jquery'
+// })
+
+// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+//   if (stage === 'build-html') {
+//     // Exclude Sign-In Widget from compilation path
+//     actions.setWebpackConfig({
+//       module: {
+//         rules: [
+//           {
+//             test: 'gatsby-browser.js',
+//             use: loaders.null(),
+//           }
+//         ],
+//       },
+//     })
+//   }
+// };

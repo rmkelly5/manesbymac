@@ -5,8 +5,11 @@ import Helmet from "react-helmet"
 import Image from "./image"
 import imgtest from "../images/test_1.png"
 import $ from 'jquery'
+//import {jQuery as $} from 'jquery/src/jquery';
 import testvid from "../images/Under_the_Sea.webm"
 // import { url } from "inspector";
+//import 'jquery/src/jquery';
+//import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 
@@ -14,9 +17,14 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
   /* --- Services Section JS START --- */ 
   
   // include jquery
-  const $ = require("jquery");
+   //const $ = require("jquery");
+  // if (typeof window !== `undefined`) {
+  //   const module = require("module")
+  // }
 
+  //const $ = typeof window !== `undefined` ? require("jquery") : null
 
+  if (typeof window !== `undefined`) {
   /* ----------------
     // set onclick events for each category element
   ---------------- */
@@ -109,7 +117,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
       // find the <ul> block that is currently shown and hide it
       if (view.classList.contains('show') && view.id !== event.target.id ){
         event.preventDefault();
-        $(view).collapse();
+        //$(view).collapse();
         $(view).removeClass('show');       
       } 
       // else if it is the new <ul> block , show it
@@ -146,7 +154,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
   // };
 
   /* --- Services Section JS END --- */ 
-
+  }
 
   return (
     <>

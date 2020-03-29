@@ -18,6 +18,7 @@ import "./layout.css"
 import ServicesSection from "./servicesSection";
 import ServicesSection1 from "./servicesSection.1";
 import GallerySection from "./gallerySection";
+import LandingView from "./landingView";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,13 +40,13 @@ const Layout = ({ children }) => {
       <NavHeader />
       
       {/* include sample content block components  */}
-      <ContentBlock blockHeight={400} backgroundColorVal={'lightblue'} />
+      <LandingView />
       
       {/* <ServicesSection blockHeight={'auto'} /> */}
 
       <ServicesSection1 blockHeight={'auto'} />
       
-      <ContactUs blockHeight={1000} backgroundColorVal={'#D1D7E0'} />
+      <ContactUs blockHeight={800} backgroundColorVal={'#D1D7E0'} />
 
       <GallerySection blockHeight={1000} backgroundColorVal={'white'}/>
 

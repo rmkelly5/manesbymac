@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 import Image from "./image"
 import imgtest from "../images/test_1.png"
 import $ from 'jquery'
+import testvid from "../images/Under_the_Sea.webm"
 // import { url } from "inspector";
 
 
@@ -24,6 +25,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
     setDesktopServicesEvents();
     // set onclick listeners for mobile dropdown to show correct content for each category 
     setMobileServicesEvents();
+    slideDropDown();
   });
 
 
@@ -82,8 +84,9 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
           // add acitve css class to selected category
           $('#' + eventId).addClass('active-category-mobile');
           // set selected category text to dropdown title
-          $('#dropdownMenu2').text( $('#' + eventId).text() );
+          $('.services-dropdown-title').text( $('#' + eventId).text() );
           // show selected category's content
+          $('.dropdown-menu').slideUp('medium');
           toggleServiceView(e);
           console.log(e.target.id, e.target.innerHTML);
         }
@@ -117,10 +120,36 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
     }
   };
 
+  function slideDropDown() {
+    $('#dropdownMenu2')[0].onclick = function(event) { 
+      console.log('click')
+      event.preventDefault();
+      var dropDownMenu = $('.dropdown-mobile');
+      if ( $('.drop-mobile')[0].classList.contains('show') ) {
+        $('.dropdown-menu').slideUp('medium');
+      } else {
+        $('.dropdown-menu').slideDown('medium');
+      }
+    }
+  };
+    
+  //   console.log('click')
+  //   event.preventDefault();
+  //   var dropDownMenu = $('.dropdown-mobile');
+  //   if ( $('.drop-mobile')[0].classList.contains('show') ) {
+  //     $('.dropdown-menu').slideUp('medium');
+
+  //   } else {
+  //     $('.dropdown-menu').slideDown('medium');
+
+  //   }
+  // };
+
   /* --- Services Section JS END --- */ 
 
 
   return (
+    <>
     <div 
       style={{ height : blockHeight , marginTop: blockMarginTop  }} 
       id="servicesSection"
@@ -155,11 +184,12 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
 
               <div class="dropdown visible-xs-only col-sm-12 col-xs-12 services-dropdown" style={{ textAlign : 'center' }}>
                
-                <button class="btn btn-secondary dropdown-toggle dropdown-title" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ width : '200px' , borderRadius : '0rem'  }}>
-                Cuts & Combo
+                <button class="btn btn-secondary dropdown-toggle dropdown-title" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ width : '220px' , borderRadius : '0rem'  }}>
+                  <div class="services-dropdown-title" style={{ display : 'inline' }}>Cuts & Combo</div>
+                  <div class="fas fa-chevron-up" aria-hidden="true" style={{ color : 'white' , borderRadius : '0rem' , marginLeft : '10px' }}></div>
                 </button>
                 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <div class="dropdown-menu drop-mobile" aria-labelledby="dropdownMenu2" style={{ width : '220px' , borderRadius : '0rem' , backgroundColor: 'lightgray' }}>
                   
                   <a id="cutsAnchorMobile" className="category-mobile active-category-mobile" data-toggle="collapse" data-target=".multi-collapse" href="#0" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><h5 className="services-h3"> Cuts & Combo </h5> </a>
 
@@ -265,6 +295,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
       
        </div>
       </div>
+    </>
   )
 }
 

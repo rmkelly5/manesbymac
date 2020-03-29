@@ -37,7 +37,7 @@ const LandingView = ({ }) => {
                     , textAlign : 'center' , fontSize : '18px'}} >Hair Artist Based in Central New Jersey</h2>    
 
       <video className="vidtest2" id="vid" preload autoPlay loop muted  >
-        <source src={testvid} type="video/webm"></source>
+        <source src={testvid} type="video/mp4"></source>
       </video> 
     </div>
 

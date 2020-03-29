@@ -5,24 +5,12 @@ import Helmet from "react-helmet"
 import Image from "./image"
 import imgtest from "../images/test_1.png"
 import $ from 'jquery'
-//import {jQuery as $} from 'jquery/src/jquery';
 import testvid from "../images/Under_the_Sea.webm"
-// import { url } from "inspector";
-//import 'jquery/src/jquery';
-//import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 
 const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) => {
   /* --- Services Section JS START --- */ 
-  
-  // include jquery
-   //const $ = require("jquery");
-  // if (typeof window !== `undefined`) {
-  //   const module = require("module")
-  // }
-
-  //const $ = typeof window !== `undefined` ? require("jquery") : null
 
   if (typeof window !== `undefined`) {
   /* ----------------
@@ -140,18 +128,6 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
       }
     }
   };
-    
-  //   console.log('click')
-  //   event.preventDefault();
-  //   var dropDownMenu = $('.dropdown-mobile');
-  //   if ( $('.drop-mobile')[0].classList.contains('show') ) {
-  //     $('.dropdown-menu').slideUp('medium');
-
-  //   } else {
-  //     $('.dropdown-menu').slideDown('medium');
-
-  //   }
-  // };
 
   /* --- Services Section JS END --- */ 
   }

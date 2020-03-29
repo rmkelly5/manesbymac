@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
-import testvid from "../images/Under_the_Sea.webm"
+import testvid from "../images/Under_the_Sea.mp4"
 import $ from 'jquery';
 
 const LandingView = ({ }) => {
@@ -36,7 +36,7 @@ const LandingView = ({ }) => {
       <h2 style={{ zIndex : '2' , position : 'relative' , paddingTop : '35px' , fontFamily : " 'Quicksand', sans-serif" 
                     , textAlign : 'center' , fontSize : '18px'}} >Hair Artist Based in Central New Jersey</h2>    
 
-      <video className="vidtest2" id="vid" preload autoPlay loop muted playsinline >
+      <video className="vidtest2" id="vid" preload autoPlay loop muted  >
         <source src={testvid} type="video/webm"></source>
       </video> 
     </div>

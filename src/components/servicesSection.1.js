@@ -22,6 +22,7 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
     // set onclick listeners for mobile dropdown to show correct content for each category 
     setMobileServicesEvents();
     slideDropDown();
+    document.getElementsByClassName('vidtest2')[0].play();
   });
 
 

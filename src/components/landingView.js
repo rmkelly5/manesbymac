@@ -50,7 +50,7 @@ const LandingView = ({ }) => {
       <h2 style={{ zIndex : '2' , position : 'relative' , paddingTop : '35px' , fontFamily : " 'Quicksand', sans-serif" 
                     , textAlign : 'center' , fontSize : '18px'}} >Hair Artist Based in Central New Jersey</h2>    
 
-      <video className="vidtest2" id="vid" preload muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop"  >
+      <video className="vidtest2" id="vid" preload muted="true" autoplay="autoplay" playsinline="playsinline" loop="loop"  >
         <source src={testvid} type="video/mp4"></source>
       </video> 
     </div>

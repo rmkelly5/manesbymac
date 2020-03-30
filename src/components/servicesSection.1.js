@@ -23,7 +23,9 @@ const ServicesSection1 = ({ blockHeight , backgroundColorVal , blockMarginTop}) 
     setMobileServicesEvents();
     slideDropDown();
     //ocument.getElementsByClassName('vidtest2')[0].play();
-    document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', () => {
+    document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', (event) => {
+       event.preventDefault();
+       console.log('suspend event triggered');
        document.getElementsByClassName('vidtest2')[0].play();
       });
     });

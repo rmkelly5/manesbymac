@@ -16,11 +16,11 @@ const LandingView = ({ }) => {
 
   $( document ).ready(function() { 
     var vid = document.getElementById("vid");
-    vid.addEventListener("timeupdate", function () {
-        if(this.currentTime >= 5.0) {
-            this.currentTime = 0.0;
-        }
-    });
+    // vid.addEventListener("timeupdate", function () {
+    //     if(this.currentTime >= 5.0) {
+    //         this.currentTime = 0.0;
+    //     }
+    // });
 
     var banner = document.querySelector('.banner');
     var bannerVideo = document.querySelector('.banner__video');

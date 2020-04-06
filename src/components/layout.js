@@ -36,39 +36,42 @@ const Layout = ({ children }) => {
 
       
 
-      {/* include navigation component  */}
+      {/* include Navigation component  */}
       <NavHeader />
       
       {/* include sample content block components  */}
       <LandingView />
       
-      {/* <ServicesSection blockHeight={'auto'} /> */}
-
-      <ServicesSection1 blockHeight={'auto'} />
+      {/* include Services Section component  */}
+      <ServicesSection blockHeight={'auto'} />
       
-      <ContactUs blockHeight={800} backgroundColorVal={'#D1D7E0'} />
+      {/* include Contact Us component  */}
+      <ContactUs blockHeight={'auto'} backgroundColorVal={'#D1D7E0'} />
 
-      <GallerySection blockHeight={1000} backgroundColorVal={'white'}/>
+      {/* include Gallery Section component  */}
+      <GallerySection blockHeight={'auto'} backgroundColorVal={'white'}/>
 
       
 
 
 
       {/* @@TODO - should be removed - do we want small 1 line footer? */}
-      {/* <div
+      <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: '100%',
+          paddingTop: `15px`,
+          position: 'relative',
+          height: '30px',
+          fontSize: '12px',
+          textAlign: 'center'
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ backgroundColor : 'black' , color : 'white' }}>
+          © {new Date().getFullYear()}, R&B Technology
         </footer>
-      </div> */}
+      </div>
 
     </>
   )

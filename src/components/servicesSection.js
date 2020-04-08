@@ -13,6 +13,7 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
   /* --- Services Section JS START --- */ 
 
   if (typeof window !== `undefined`) {
+
   /* ----------------
     // set onclick events for each category element
   ---------------- */
@@ -21,14 +22,28 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
     setDesktopServicesEvents();
     // set onclick listeners for mobile dropdown to show correct content for each category 
     setMobileServicesEvents();
+    // set up drop down content 
     slideDropDown();
-    //ocument.getElementsByClassName('vidtest2')[0].play();
-    document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', (event) => {
-       event.preventDefault();
-       console.log('suspend event triggered');
-       document.getElementsByClassName('vidtest2')[0].play();
-      });
-    });
+    // document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', (event) => {
+    //   console.log('suspend event triggered');
+    //   let backgroundVideo = document.getElementsByClassName('vidtest2')[0];
+    //   $('body').on('click touchstart', function () {
+    //     if (!backgroundVideo.isPlaying()) {
+    //         // video is already playing so do nothing
+    //         backgroundVideo.play();
+    //     }
+    //   }); 
+    // });
+  });
+      
+    
+  /* ----------------
+    // set onclick events for the desktop menu
+  ---------------- */
+  // function isPlaying() {
+  //   let backgroundVideo = document.getElementsByClassName('vidtest2')[0];
+  //   return !!(backgroundVideo.currentTime > 0 && !backgroundVideo.paused && !backgroundVideo.ended && backgroundVideo.readyState > 2);
+  // }
 
 
   /* ----------------
@@ -122,6 +137,7 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
     }
   };
 
+
   function slideDropDown() {
     $('#dropdownMenu2')[0].onclick = function(event) { 
       console.log('click')
@@ -177,7 +193,7 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
                 <button class="btn btn-secondary dropdown-toggle dropdown-title" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ width : '220px' , borderRadius : '0rem' ,
                     backgroundColor : 'rgba(161,167,172,0.7)' }}>
                   <div class="services-dropdown-title" style={{ display : 'inline' }}>Cuts & Combo</div>
-                  <div class="fas fa-chevron-up" aria-hidden="true" style={{ color : 'white' , borderRadius : '0rem' , marginLeft : '10px' }}></div>
+                  <div class="fas fa-chevron-down" aria-hidden="true" style={{ color : 'white' , borderRadius : '0rem' , marginLeft : '10px' }}></div>
                 </button>
                 
                 <div class="dropdown-menu drop-mobile" aria-labelledby="dropdownMenu2" style={{ width : '220px' , borderRadius : '0rem' , backgroundColor: 'lightgray' }}>

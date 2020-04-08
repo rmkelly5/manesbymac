@@ -69,7 +69,7 @@ window.onscroll = function() {
     </Helmet>
     <nav id="navbar" className="navbar navbar-expand-md navbar-dark nav-div">
         <a className="navbar-brand logo-icon nav-anchor" style={{ paddingLeft: '10px' }} href="#">MM</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
       

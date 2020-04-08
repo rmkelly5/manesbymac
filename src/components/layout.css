@@ -277,7 +277,28 @@ video::-webkit-media-controls-panel{
   overflow: hidden;
 }
 
+.nav-btn {
+  border: none!important;
+}
 
+.nav-btn:focus {
+  outline: none;
+}
+
+.landing-view {
+  margin-top: 150px;
+}
+
+.alternate-landing-view {
+  /* margin-top: 150px; */
+  background-color: black;
+  z-index: 2;
+  color: papayawhip;
+  padding-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  position: relative;
+}
 
 
 

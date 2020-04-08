@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
-import testvid from "../images/Under_the_Sea.mp4"
+import testvid from "../images/Under-sea-compress.mp4"
 import $ from 'jquery';
 
 const LandingView = ({ }) => {

@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 import Image from "./image"
 import imgtest from "../images/test_1.png"
 import $ from 'jquery'
-import testvid from "../images/Under_the_Sea.webm"
+import testvid from "../images/under-sea-compress.mp4"
 
 
 

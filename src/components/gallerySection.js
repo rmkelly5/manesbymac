@@ -4,7 +4,8 @@ import React from "react"
 import Helmet from "react-helmet"
 import Image from "../components/image"
 // import { url } from "inspector";
-import imgtest from "../images/sample_pic.png"
+import imgtest from "../images/sample_pic.png" 
+import "./layout.css"
 
 
 
@@ -23,32 +24,29 @@ const GallerySection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =>
       style={{ height : blockHeight , backgroundColor: backgroundColorVal , marginTop: blockMarginTop }} 
       id="gallerySection"
     >
-    <h1 style={{ textAlign: "center", padding: "25px"}}>Gallery</h1>
+    <h1 style={{ textAlign: "center", padding: "25px", color: 'black'}}>Gallery</h1>
 
-    <div class="row">
-
-
-      <div class="col-lg-6">
-        <div id="test1" style={{ width: '320px', height: "380px" , outline: '1px solid black' , float: 'left' , marginLeft: '35%' }}></div>
-      {/* <img src={imgtest} style={{ width: '320px', height: "380px"}}></img> */}
-      </div>
-
-
-      <div class="col-lg-6" >
-      <div style={{ width: '320px', height: "380px" , outline: '1px solid black' , float: 'right' , marginRight: '35%'}}></div>
-      {/* <img src={imgtest} style={{ width: '320px', height: "380px"}}></img> */}
-      </div>
-    
-      <div class="col-lg-6">
-      <div style={{ width: '320px', height: "380px" , outline: '1px solid black' , float: 'left' , marginLeft: '35%' , marginTop: '35px'}}></div>
-      {/* <img src={imgtest} style={{ width: '320px', height: "380px", display: 'none'}}></img> */}
-      </div>
-
-      <div class="col-lg-6" >
-      <div style={{ width: '320px', height: "380px" , outline: '1px solid black' , float: 'right' , marginRight: '35%' , marginTop: '35px'}} onClick={ test }></div>
-      {/* <img src={imgtest} style={{ width: '320px', height: "380px" , display: 'none'}}></img> */}
-      </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div style={{ backgroundColor: 'black'}} class="carousel-inner">
+    <div class="carousel-item active">
+      <img className="img1" src={imgtest} class="w-400" alt="los angeles"></img>
     </div>
+    <div class="carousel-item">
+      <img src="..." class="w-100" alt="..."></img>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="w-100" alt="..."></img>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>  
 
     </div>
   )

@@ -8,7 +8,7 @@ import $ from 'jquery'
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]', {
+  require("smooth-scroll")('a[href*="#"]:not([href="#carouselExampleFade"])', {
     speed: 1000,
     speedAsDuration: true
   });

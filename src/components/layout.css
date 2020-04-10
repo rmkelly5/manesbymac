@@ -314,14 +314,18 @@ video::-webkit-media-controls-panel{
 }
 
 .carousel-inner{
-  height: 500px
+  height: 590px
 }
 
 .img1{
-  width: 400px !important;
-  margin-top: 20px;
+  width: 500px !important;
+  height: 570px
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 

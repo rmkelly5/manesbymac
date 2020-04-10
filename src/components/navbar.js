@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 import "./layout.css"
+import $ from 'jquery'
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
@@ -16,16 +17,28 @@ if (typeof window !== "undefined") {
 const NavHeader = () => {
 
   // javascript for navbar hide on scroll
+if (typeof window !== `undefined`) {
 
   var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
+    
+    if ( document.getElementById('navbarSupportedContent').className.includes('show') ) {
+      $('#navbarSupportedContent').removeClass('show');
+    }
+
   } else {
     document.getElementById("navbar").style.top = "-70px";
+    
+    if ( document.getElementById('navbarSupportedContent').className.includes('show') ) {
+      $('#navbarSupportedContent').removeClass('show');
+    }
+
   }
   prevScrollpos = currentScrollPos;
+}
 }
 
   return (
@@ -36,7 +49,7 @@ window.onscroll = function() {
       <script src="https://kit.fontawesome.com/e2a027d1b1.js" crossorigin="anonymous"></script>
 
       {/* including jQuery via src/html.js */}
-      {/* <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> */}
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       
       {/*importing bootstrap  JS*/}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -47,7 +60,7 @@ window.onscroll = function() {
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
       
       {/* importing googl map API */}
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-IaoIh43rhygYYBAfbhHJuuzbZWKkhII&callback=initMap" async defer />
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATSFUHDfiDzp025aBPEHJbJjbCYhi2CFo&callback=initMap" async defer />
       
       {/* importing google fonts */}
       <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"></link>
@@ -55,8 +68,8 @@ window.onscroll = function() {
 
     </Helmet>
     <nav id="navbar" className="navbar navbar-expand-md navbar-dark nav-div">
-        <a className="navbar-brand logo-icon nav-anchor" href="#">MM</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a className="navbar-brand logo-icon nav-anchor" style={{ paddingLeft: '10px' }} href="#">MM</a>
+        <button className="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
       
@@ -82,6 +95,7 @@ window.onscroll = function() {
             <li className="nav-item nav-li-item">
             <a className="nav-link" href="#contactSection">Contact</a>
             </li>
+            <li role="presentation" class="divider" style={{ margin: '9px', backgroundColor: 'white', height: '1px' }}></li>
             <li className="nav-item nav-li-item">
             <a className="nav-link" href="http://instagram.com/manesbymaceymorgan">
               <div><span className="fab fa-instagram fa-lg" aria-hidden="true"></span></div>

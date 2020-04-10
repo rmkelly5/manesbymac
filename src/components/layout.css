@@ -1,3 +1,335 @@
+/* Styles added by us */
+/* @@TODO : remove !important's */
+
+
+.navpos{
+  margin: auto;
+}
+
+.nav-li-item{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 23px;
+}
+.nav-div{
+  background-color: #000;
+}
+
+.navbar a{
+  color: white !important;
+}
+
+.navbar a:hover{
+  color: pink !important;
+}
+
+.navbar{
+  padding: initial !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  top: 0;
+  transition: top 0.3s;
+  position: fixed !important;
+  width: 100%;
+  z-index: 10;
+}
+
+/* font styling */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+body h1 {
+  font-family:  'Pacifico', cursive;
+}
+
+body li {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-brand{
+  font-family:  'Pacifico', cursive;
+}
+
+/* .Logo {
+  background-image: url(../images/test_1.png);
+
+  background-size:100% 100%;
+  background-image: url(../images/test_1.png);
+} */
+
+/* .LogoOp {
+  background-color: #ffffff;
+  opacity: 0.6; 
+  widows: 100%;
+  height : 100%;
+} */
+
+.keratin-treatments-top {
+  top: -75px;
+}
+
+.bleaching-services-top{
+  padding-top : 225px
+}
+
+.services-h3 {
+  text-align: start;
+  color: black;
+  padding-bottom: 20px; 
+  padding-left: 20px;
+}
+
+.services-category:hover {
+  text-decoration: none;
+}
+
+.dropdown-toggle:after {
+  content: unset !important;
+}
+
+.category-mobile:hover {
+  text-decoration: none;
+}
+
+.active-category h5{
+  text-decoration: underline solid purple;
+  text-underline-position: under;
+  /* transition: all ease-in .25s;  */
+  font-size: 1.75rem !important;
+}
+
+.active-category-mobile h5{
+  text-decoration: underline solid purple;
+  text-underline-position: under;
+  /* transition: all ease-in .25s;  */
+  /* font-size: 1.75rem !important; */
+}
+
+h5 {
+  font-size: 1rem !important;
+}
+
+/* .active-category h5 {
+  font-size: 1.75rem;
+} */
+
+/* .services-h3{
+  font-size: 18px;
+  transition: all ease-in-out 1s;
+} */
+
+/* .services-h3 .active-category{
+  font-size: 58px;
+} */
+
+.active-category:hover{
+  text-decoration: underline solid;
+  text-underline-position: under;
+  color: purple;
+}
+
+.services-title {
+  padding-bottom: 50px;
+}
+
+.contact-us-row {
+  padding-left: 100px;
+  padding-right: 100px; 
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+
+@media  (max-width: 500px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs-only {
+    display: block;
+  }
+
+  .services-h3 {
+    padding-bottom: 0px;
+  }
+
+  .dropdown-title {
+    color: white !important;
+  }
+
+  .services-title {
+    padding-bottom: 20px;
+  }
+
+  .services-dropdown{
+    padding-bottom: 25px;
+  }
+
+  .contact-us-row {
+    padding-left: 50px;
+    padding-right: 50px; 
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
+}
+
+
+
+@media  (min-width: 501px) {
+  .visible-xs-only {
+    display: none;
+  }
+}
+
+
+
+@media  (max-width: 767px) {
+  .keratin-treatments-top {
+    top: unset;
+  }
+
+  .bleaching-services-top{
+    padding-top : 50px
+  }
+}
+
+@media  (max-width: 991px) {
+  .map-buffer{
+    margin-top: 25px;
+  }
+}
+
+
+
+
+.vidtest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+*::-webkit-media-controls-start-playback-button{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-start-playback-button{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls{
+  display: none!important;
+  opacity:0;
+}
+
+video::-webkit-media-controls{
+  display: none!important;
+  opacity:0;
+}
+
+*::-webkit-media-controls-panel{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-panel{
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+.vidtest2 {
+    left: 50%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    top: 50%;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    /* margin-top: -50px; */
+    bottom: 10%;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-btn {
+  border: none!important;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.landing-view {
+  margin-top: 150px;
+}
+
+.alternate-landing-view {
+  /* margin-top: 150px; */
+  background-color: black;
+  z-index: 2;
+  color: papayawhip;
+  padding-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  position: relative;
+}
+
+.carousel-item {
+  width:440px;
+  height:4000px;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+#carouselExampleFade{
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 600px;
+}
+
+.carousel-inner{
+  height: 500px
+}
+
+.img1{
+  width: 400px !important;
+  margin-top: 20px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+
+
+
+/* Bootstrap source styles  */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -622,211 +954,4 @@ pre tt:after {
 }
 
 
-/* Styles added by us */
-/* @@TODO : remove !important's */
 
-.navpos{
-  margin: auto;
-}
-
-.nav-li-item{
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 23px;
-}
-.nav-div{
-  background-color: #000;
-}
-
-.navbar a{
-  color: white !important;
-}
-
-.navbar a:hover{
-  color: pink !important;
-}
-
-.navbar{
-  padding: initial !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  top: 0;
-  transition: top 0.3s;
-  position: fixed !important;
-  width: 100%;
-  z-index: 10;
-}
-
-/* font styling */
-body {
-  font-family: 'Quicksand', sans-serif;
-}
-
-body p {
-  font-family: 'Quicksand', sans-serif;
-}
-
-body h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-}
-
-body h1 {
-  font-family:  'Pacifico', cursive;
-}
-
-body li {
-  font-family: 'Quicksand', sans-serif;
-}
-
-.navbar-brand{
-  font-family:  'Pacifico', cursive;
-}
-
-/* .Logo {
-  background-image: url(../images/test_1.png);
-
-  background-size:100% 100%;
-  background-image: url(../images/test_1.png);
-} */
-
-/* .LogoOp {
-  background-color: #ffffff;
-  opacity: 0.6; 
-  widows: 100%;
-  height : 100%;
-} */
-
-.keratin-treatments-top {
-  top: -75px;
-}
-
-.bleaching-services-top{
-  padding-top : 225px
-}
-
-.services-h3 {
-  text-align: start;
-  color: black;
-  padding-bottom: 20px; 
-  padding-left: 20px;
-}
-
-.services-category:hover {
-  text-decoration: none;
-}
-
-.dropdown-toggle:after {
-  content: unset !important;
-}
-
-.category-mobile:hover {
-  text-decoration: none;
-}
-
-.active-category h5{
-  text-decoration: underline solid purple;
-  text-underline-position: under;
-  /* transition: all ease-in .25s;  */
-  font-size: 1.75rem !important;
-}
-
-.active-category-mobile h5{
-  text-decoration: underline solid purple;
-  text-underline-position: under;
-  /* transition: all ease-in .25s;  */
-  /* font-size: 1.75rem !important; */
-}
-
-h5 {
-  font-size: 1rem !important;
-}
-
-/* .active-category h5 {
-  font-size: 1.75rem;
-} */
-
-/* .services-h3{
-  font-size: 18px;
-  transition: all ease-in-out 1s;
-} */
-
-/* .services-h3 .active-category{
-  font-size: 58px;
-} */
-
-.active-category:hover{
-  text-decoration: underline solid;
-  text-underline-position: under;
-  color: purple;
-}
-
-.services-title {
-  padding-bottom: 50px;
-}
-
-@media  (max-width: 500px) {
-  .hidden-xs {
-    display: none;
-  }
-
-  .visible-xs-only {
-    display: block;
-  }
-
-  .services-h3 {
-    padding-bottom: 0px;
-  }
-
-  .dropdown-title {
-    color: white !important;
-  }
-
-  .services-title {
-    padding-bottom: 20px;
-  }
-
-  .services-dropdown{
-    padding-bottom: 25px;
-  }
-}
-.carousel-item {
-  width:440px;
-  height:4000px;
-  text-align: center;
-  display: block;
-  margin-top: 10px;
-}
-
-#carouselExampleFade{
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 600px;
-}
-
-.carousel-inner{
-  height: 500px
-}
-
-.img1{
-  width: 400px !important;
-  margin-top: 20px;
-}
-
-@media  (min-width: 501px) {
-  .visible-xs-only {
-    display: none;
-  }
-}
-
-
-
-@media  (max-width: 767px) {
-  .keratin-treatments-top {
-    top: unset;
-  }
-
-  .bleaching-services-top{
-    padding-top : 50px
-  }
-}

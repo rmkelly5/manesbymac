@@ -11,12 +11,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {/* including jQuery CDN link here   */}
-        <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossOrigin="anonymous"
-        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

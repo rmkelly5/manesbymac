@@ -300,7 +300,28 @@ video::-webkit-media-controls-panel{
   position: relative;
 }
 
+.carousel-item {
+  width:440px;
+  height:4000px;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
 
+#carouselExampleFade{
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 600px;
+}
+
+.carousel-inner{
+  height: 500px
+}
+
+.img1{
+  width: 400px !important;
+  margin-top: 20px;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
@@ -520,7 +541,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-img {
+/* img {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -530,7 +551,7 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 h1 {
   margin-left: 0;
   margin-right: 0;

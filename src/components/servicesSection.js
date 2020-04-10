@@ -24,27 +24,8 @@ const ServicesSection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =
     setMobileServicesEvents();
     // set up drop down content 
     slideDropDown();
-    // document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', (event) => {
-    //   console.log('suspend event triggered');
-    //   let backgroundVideo = document.getElementsByClassName('vidtest2')[0];
-    //   $('body').on('click touchstart', function () {
-    //     if (!backgroundVideo.isPlaying()) {
-    //         // video is already playing so do nothing
-    //         backgroundVideo.play();
-    //     }
-    //   }); 
-    // });
   });
-      
     
-  /* ----------------
-    // set onclick events for the desktop menu
-  ---------------- */
-  // function isPlaying() {
-  //   let backgroundVideo = document.getElementsByClassName('vidtest2')[0];
-  //   return !!(backgroundVideo.currentTime > 0 && !backgroundVideo.paused && !backgroundVideo.ended && backgroundVideo.readyState > 2);
-  // }
-
 
   /* ----------------
     // set onclick events for the desktop menu

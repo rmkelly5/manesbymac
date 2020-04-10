@@ -26,9 +26,11 @@ const LandingView = ({ }) => {
         return true;
     }
   }
+  
   $( document ).ready(function() { 
     document.getElementsByClassName('vidtest2')[0].addEventListener('suspend', (event) => {
       console.log('suspend event triggered');
+      // if user is on IOS device in low power mode HTML5 video tags will not autoplay
       if (!isPlaying() && iOSDevice() ) {
         document.getElementById('landing-block').classList.add('alternate-landing-view');
       }
@@ -41,33 +43,8 @@ const LandingView = ({ }) => {
         }
       }); 
     });
-    
-    
-    
-    // var vid = document.getElementById("vid");
-
-
-    // var banner = document.querySelector('.banner');
-    // var bannerVideo = document.querySelector('.banner__video');
-
-    // if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-    //   banner.style.backgroundImage = 'url("' + bannerVideo.poster + '")';
-    //   banner.style.backgroundSize = 'cover';
-    //   banner.style.backgroundPosition = 'center';
-    //   bannerVideo.style.display = 'none';
-    // }
 
   });
-
-
-  // /* ----------------
-  //   // set onclick events for the desktop menu
-  // ---------------- */
-  // function isPlaying() {
-  //   let backgroundVideo = document.getElementsByClassName('vidtest2')[0];
-  //   return !!(backgroundVideo.currentTime > 0 && !backgroundVideo.paused && !backgroundVideo.ended && backgroundVideo.readyState > 2);
-  // }
-
   
 }
   

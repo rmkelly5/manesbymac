@@ -10,6 +10,11 @@ import hair2 from "../images/hair_2.jpg"
 import hair3 from "../images/hair_3.jpg"
 import hair4 from "../images/hair_4.jpg"
 import hair5 from "../images/hair_5.jpg"
+import hair6 from "../images/hair_6.jpeg"
+import hair7 from "../images/hair_7.jpeg"
+import hair8 from "../images/hair_8.jpeg"
+import hair9 from "../images/hair_9.jpeg"
+import hair10 from "../images/hair_10.jpeg"
 import "./layout.css"
 import $ from 'jquery'
 
@@ -50,6 +55,21 @@ const GallerySection = ({ blockHeight , backgroundColorVal , blockMarginTop}) =>
     </div>
     <div class="carousel-item">
       <img id="mobileimg" className="img1" src={hair5} class="w-400 img1" alt="los angeles"></img>
+    </div>
+    <div class="carousel-item">
+      <img id="mobileimg" className="img1" src={hair6} class="w-400 img1" alt="los angeles"></img>
+    </div>
+    <div class="carousel-item">
+      <img id="mobileimg" className="img1" src={hair7} class="w-400 img1" alt="los angeles"></img>
+    </div>
+    <div class="carousel-item">
+      <img id="mobileimg" className="img1" src={hair8} class="w-400 img1" alt="los angeles"></img>
+    </div>
+    <div class="carousel-item">
+      <img id="mobileimg" className="img1" src={hair9} class="w-400 img1" alt="los angeles"></img>
+    </div>
+    <div class="carousel-item">
+      <img id="mobileimg" className="img1" src={hair10} class="w-400 img1" alt="los angeles"></img>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
